@@ -13,7 +13,7 @@ public class GalleryDB {
     public static void main(String[] args) throws ClassNotFoundException, SQLException{
 
         Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/gallery?useUnicode=true&useJDBCCompliantTimezoneShift=true&" +
-                "useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "0607");
+                "useLegacyDatetimeCode=false&serverTimezone=UTC", "ID", "PW");
         Statement stmt= conn.createStatement();
 
         System.out.println("프로그램 시작");
