@@ -10,7 +10,7 @@ import java.sql.Statement;
 public class JDBC_Programming{
     public static void main(String[] args) throws ClassNotFoundException, SQLException{
         try {
-            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/gallery?useUnicode=true&useJDBCCompliantTimezoneShift=true&" + "useLegacyDatetimeCode=false&serverTimezone=UTC", "root", "0607");
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/gallery?useUnicode=true&useJDBCCompliantTimezoneShift=true&" + "useLegacyDatetimeCode=false&serverTimezone=UTC", "ID", "PW");
             // Select
             Statement stmt= conn.createStatement();
             ResultSet rset= stmt.executeQuery("select * from artwork");
